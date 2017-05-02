@@ -21,18 +21,10 @@ before_install:
 
 after_success:
  - ./gradlew coveralls
-# - chmod +x ./upload-gh-pages.sh
-# - chmod +x ./import-translations-github.sh
-# - ./import-translations-github.sh
-# - ./upload-gh-pages.sh
 
 script:
  - cd $TRAVIS_BUILD_DIR/
-# - ./gradlew testDebugUnitTest assembleDebug jacocoTestReport
- - ./gradlew assembleDebug jacocoTestReport
-
-#notifications:
-#  slack: glucosio:uk2xb9sAxOaVedj7zePyuBqa
+ - ./gradlew jacocoTestReport
 
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
