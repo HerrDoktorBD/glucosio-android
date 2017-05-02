@@ -1,7 +1,7 @@
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/glucosio/localized.png)](https://crowdin.com/project/glucosio)
-[![Build Status](https://travis-ci.org/Glucosio/glucosio-android.svg)](https://travis-ci.org/Glucosio/glucosio-android)
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/HerrDoktorBD/localized.png)](https://crowdin.com/project/HerrDoktorBD)
+[![Build Status](https://travis-ci.org/HerrDoktorBD/glucosio-android.svg)](https://travis-ci.org/HerrDoktorBD/glucosio-android)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a6f7bcc22a174ac9b36795438c143b6d)](https://www.codacy.com/app/Glucosio/glucosio-android?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Glucosio/glucosio-android&amp;utm_campaign=Badge_Grade)
-[![Coverage Status](https://coveralls.io/repos/github/Glucosio/glucosio-android/badge.svg?branch=develop)](https://coveralls.io/github/Glucosio/glucosio-android?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/HerrDoktorBD/glucosio-android/badge.svg?branch=develop)](https://coveralls.io/github/HerrDoktorBD/glucosio-android?branch=develop)
 
 # Glucosio for Android
 Glucosio for Android, a user centered free and open source app for Diabetes management and research for Android.
