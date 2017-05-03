@@ -33,7 +33,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -52,7 +51,6 @@ import android.widget.TextView;
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
-import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.LimitLine;
 import com.github.mikephil.charting.components.XAxis;
@@ -99,7 +97,6 @@ public class OverviewFragment extends Fragment implements OverviewView {
 
     private List<String> xValues = new ArrayList<>();
 
-
     public static OverviewFragment newInstance() {
         return new OverviewFragment();
     }
@@ -121,7 +118,6 @@ public class OverviewFragment extends Fragment implements OverviewView {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -274,7 +270,6 @@ public class OverviewFragment extends Fragment implements OverviewView {
             }
         });
 
-
         final XAxis xAxis = chart.getXAxis();
         xAxis.setDrawGridLines(false);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -400,7 +395,6 @@ public class OverviewFragment extends Fragment implements OverviewView {
 
         XAxis xAxis = chart.getXAxis();
 
-        final LineData finalData = data;
         IAxisValueFormatter formatter = new IAxisValueFormatter() {
 
             @Override
@@ -415,7 +409,6 @@ public class OverviewFragment extends Fragment implements OverviewView {
         };
         xAxis.setGranularity(1f); // minimum axis-step (interval) is 1
         xAxis.setValueFormatter(formatter);
-
     }
 
     private LineData generateGlucoseData() {

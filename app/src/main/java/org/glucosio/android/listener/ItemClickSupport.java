@@ -25,7 +25,6 @@ import android.view.View;
 
 import org.glucosio.android.R;
 
-
 /**
  * @see <a href="http://www.littlerobots.nl/blog/Handle-Android-RecyclerView-Clicks/">Getting your clicks on RecyclerView | Hugo Visser</a>
  */

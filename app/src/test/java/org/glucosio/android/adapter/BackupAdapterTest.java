@@ -23,7 +23,6 @@ import static org.assertj.android.api.Assertions.assertThat;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 public class BackupAdapterTest extends RobolectricTest {
-    private AppCompatActivity activity;
     private ViewGroup viewGroup;
     private BackupAdapter adapter;
 
@@ -34,7 +33,7 @@ public class BackupAdapterTest extends RobolectricTest {
     public void setUp() throws Exception {
         initMocks(this);
 
-        activity = Robolectric.buildActivity(AppCompatActivity.class).create().get();
+        AppCompatActivity activity = Robolectric.buildActivity(AppCompatActivity.class).create().get();
         viewGroup = (ViewGroup) activity.findViewById(android.R.id.content);
 
         List<GlucosioBackup> backupsArray = new ArrayList<>();
@@ -43,7 +42,7 @@ public class BackupAdapterTest extends RobolectricTest {
     }
 
     @Test
-    public void ReturnViewWithSizeFormatted_WhenAsked() throws Exception {
+    public void returnViewWithSizeFormattedWhenAsked() throws Exception {
         View view = adapter.getView(0, null, viewGroup);
 
         TextView sizeView = (TextView) view.findViewById(R.id.item_history_type);

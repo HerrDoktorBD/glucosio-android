@@ -24,7 +24,6 @@ import org.glucosio.android.R;
 import org.glucosio.android.db.CholesterolReading;
 import org.glucosio.android.db.DatabaseHandler;
 import org.glucosio.android.db.GlucoseReading;
-import org.glucosio.android.db.HB1ACReading;
 import org.glucosio.android.db.KetoneReading;
 import org.glucosio.android.db.PressureReading;
 import org.glucosio.android.db.WeightReading;
